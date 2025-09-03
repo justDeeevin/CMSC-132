@@ -21,4 +21,10 @@ public class Sheet1 {
       else list.set(i, 0);
     }
   }
+
+  public static int findPos(int[] arr, int eltToFind) {
+    int out = -1;
+    for (int i = 0; i < arr.length; i++) if (arr[i] == eltToFind) out = i;
+    return out;
+  }
 }
